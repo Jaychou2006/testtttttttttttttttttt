@@ -1,0 +1,30 @@
+using System;
+
+namespace Lesson19_练习题
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+         
+            string userName = "";
+            string passWord = "";
+            bool isShow = false;
+            do
+            {
+                if (isShow)
+                {
+                    Console.WriteLine("用户名或密码错误，请重新输入");
+                }
+                //循环输入
+                Console.WriteLine("请输入用户名");
+                userName = Console.ReadLine();
+                Console.WriteLine("请输入密码");
+                passWord = Console.ReadLine();
+                isShow = true;
+            } while (userName != "Jaychou" || passWord != "8888");
+        }
+    }
+}
+    
